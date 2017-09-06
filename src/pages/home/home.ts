@@ -14,9 +14,10 @@ export class HomePage {
   @ViewChild(Slides) slides: Slides
 
   recipes: Recipe[]
+  loader: RecipeService
 
-  constructor(public navCtrl: NavController, recipes: RecipeService) {
-    this.recipes = recipes.getAll()
+  constructor(public navCtrl: NavController, loader: RecipeService) {
+    loader.getAll().then(recipes => { this.recipes = recipes })
   }
 
   ngAfterViewInit() {

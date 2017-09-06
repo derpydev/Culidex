@@ -1,52 +1,41 @@
 import { Injectable } from '@angular/core'
 import { Recipe } from '../models/recipe'
+import { Storage } from '@ionic/storage'
+import { HTTP } from '@ionic-native/http'
 
 @Injectable()
 export class RecipeService {
-  getAll(): Recipe[] {
-    const recipe1 = new Recipe('Basic Fruit Salad')
-    recipe1.imageUrl = 'assets/fruit-salad.jpg'
-    recipe1.ingredients = [
-      '1 apple',
-      '1 banana',
-      '1 orange',
-      '1 cup grapes'
-    ]
-    recipe1.instructions = [
-      'Cut the apple into cubes.',
-      'Cut the banana into slices.',
-      'Peel the orange, and divide into segments.',
-      'Combine all ingredients in a bowl.',
-      'Mix to combine.'
-    ]
-    recipe1.cookTime = 'N/A'
-    recipe1.prepTime = '20 min'
-    recipe1.servings = 5
+  private storage: Storage
+  private http: HTTP
+  private setup: Promise<any>
 
+  constructor() {
+    this.storage = new Storage({name: 'culidex'})
+    this.http = new HTTP()
+    this.initStorage()
+  }
 
-    const recipe2 = new Recipe('Basic Fruit Salad')
-    recipe2.imageUrl = 'assets/fruit-salad.jpg'
-    recipe2.ingredients = [
-      '1 apple',
-      '1 banana',
-      '1 orange',
-      '1 cup grapes'
-    ]
-    recipe2.instructions = [
-      'Cut the apple into cubes.',
-      'Cut the banana into slices.',
-      'Peel the orange, and divide into segments.',
-      'Combine all ingredients in a bowl.',
-      'Mix to combine.',
-      'Extra line!',
-      'Extra line!',
-      'Extra line!',
-      'Extra line!'
-    ]
-    recipe2.cookTime = 'N/A'
-    recipe2.prepTime = '20 min'
-    recipe2.servings = 5
+  async initStorage() {
+    await this.storage.ready()
+    await this.storage.clear()
+    const raw = await this.http.get('assets/preload.json', {}, {})
+    const data = JSON.parse(raw.data)
+    data.entries().forEach(async ([ key, recipe ]) => {
+      await this.storage.set(key, recipe)
+    })
+  }
 
-    return [recipe1, recipe2]
+  async getAll(): Promise<Recipe[]> {
+    await this.setup
+    const promise: Promise<Recipe[]> = new Promise((resolve, reject) => {
+      const recipes: Recipe[] = new Array<Recipe>()
+      this.storage.forEach((v, k, i) => {
+        const recipe: Recipe = JSON.parse(v)
+        recipes.push(recipe)
+      })
+      .then(() => resolve(recipes))
+      .catch(reject)
+    })
+    return promise
   }
 }

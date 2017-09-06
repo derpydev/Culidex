@@ -1,0 +1,49 @@
+{
+  "121a213d-4c11-4614-8abb-3ed27ca9acf1": {
+    "name": "Basic Fruit Salad",
+    "imageUrl": "assets/fruit-salad.jpg",
+    "prepTime": "20 min",
+    "cookTime": "N/A",
+    "servings": 5,
+    "ingredients": [
+      "1 apple",
+      "1 banana",
+      "1 orange",
+      "1 cup grapes"
+    ],
+    "instructions": [
+      "Cut the apple into cubes.",
+      "Cut the banana into slices.",
+      "Peel the orange, and divide into segments.",
+      "Combine all ingredients in a bowl.",
+      "Mix to combine."
+    ]
+  },
+  "4e895d22-557c-497d-b1ae-31d200c1a7f1": {
+    "name": "Basic Fruit Salad",
+    "imageUrl": "assets/fruit-salad.jpg",
+    "prepTime": "20 min",
+    "cookTime": "N/A",
+    "servings": 5,
+    "ingredients": [
+      "1 apple",
+      "1 banana",
+      "1 orange",
+      "1 cup grapes"
+    ],
+    "instructions": [
+      "Cut the apple into cubes.",
+      "Cut the banana into slices.",
+      "Peel the orange, and divide into segments.",
+      "Combine all ingredients in a bowl.",
+      "Mix to combine.",
+      "Extra line!",
+      "Extra line!",
+      "Extra line!",
+      "Extra line!"
+    ]
+  },
+  "e95cee2a-33f5-40af-bb50-a98cccb57926": {
+
+  }
+}
