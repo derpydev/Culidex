@@ -1,49 +1,88 @@
 {
   "121a213d-4c11-4614-8abb-3ed27ca9acf1": {
-    "name": "Basic Fruit Salad",
-    "imageUrl": "assets/fruit-salad.jpg",
-    "prepTime": "20 min",
-    "cookTime": "N/A",
-    "servings": 5,
+    "name": "Panko Encrusted Lime Chicken",
+    "imageUrl": "https://cinc-prod.s3.amazonaws.com/user-images/thumbs/2000_2000_nocrop/pW6PiTr2Cv.jpg",
+    "prepTime": "26 min",
+    "cookTime": "17 min",
+    "servings": 4,
     "ingredients": [
-      "1 apple",
-      "1 banana",
-      "1 orange",
-      "1 cup grapes"
+      "2 Large chicken breast, skinned and de-boned",
+      "2 Limes, Juice both, and zest one and set aside",
+      "2 cups Panko bread crumps",
+      "2 tablespoons Hosin Sauce",
+      "1 teaspoon Salt",
+      "1 teaspoon Ground Black Peper",
+      "2 cups All purpose Flour",
+      "3 Large Eggs",
+      "3 cups Frying Oil, Can be veg oil, canola, or peanut."
     ],
     "instructions": [
-      "Cut the apple into cubes.",
-      "Cut the banana into slices.",
-      "Peel the orange, and divide into segments.",
-      "Combine all ingredients in a bowl.",
-      "Mix to combine."
+      "Cut chicken into large chunks, then place in large bowl. Add the zest of one lime, salt and peper. Cover and let marinate for at least 15 mins in refrigerator. While the chicken is chilling, set a large pot/skillet on meduim high heat with 2-3 cups of oil for frying.",
+      "In 3 bowls/pans add the flour to one, the eggs(wisked) to the other , and the last add the panko bread crumbs. Dredge the chicken chunks into the flour then, egg mixture, and lastly in to the panko set aside. Repete til all of the chicken is battered.",
+      "Slowly add the chicken to the hot oil, and fry until golden brown. Set on rack or paper towl to drain.",
+      "In a large bowl add the fryed chicken and toss with hosin, and lime juice."
     ]
   },
   "4e895d22-557c-497d-b1ae-31d200c1a7f1": {
-    "name": "Basic Fruit Salad",
-    "imageUrl": "assets/fruit-salad.jpg",
-    "prepTime": "20 min",
-    "cookTime": "N/A",
-    "servings": 5,
+    "name": "Thai Basil Chicken",
+    "imageUrl": "https://cinc-prod.s3.amazonaws.com/user-images/thumbs/1200_384/DFHGmzqbP5.jpg",
+    "prepTime": null,
+    "cookTime": "18 min",
+    "servings": 2,
     "ingredients": [
-      "1 apple",
-      "1 banana",
-      "1 orange",
-      "1 cup grapes"
+      "3 tablespoons Sesame Oil",
+      "3 Thai Bird Chilies, (Red Thai Chili Peppers)",
+      "1/2 Red Onion, Chopped long, not diced",
+      "5 Cloves Garlic, Minced",
+      "1 pound Ground Chicken, Can Substitue with Turkey",
+      "1 tablespoon Fish Sauce",
+      "2 tablespoons Low Sodium Soy Sauce",
+      "2 teaspoons Brown Sugar or Honey",
+      "1/3 Chicken Broth",
+      "3/4 cup Thai Basil Leaves, Whole",
+      "1 cup White Steamed Rice, (if served over rice) optional",
+      "1/2 Head of Lettuce, (if served as wraps)"
     ],
     "instructions": [
-      "Cut the apple into cubes.",
-      "Cut the banana into slices.",
-      "Peel the orange, and divide into segments.",
-      "Combine all ingredients in a bowl.",
-      "Mix to combine.",
-      "Extra line!",
-      "Extra line!",
-      "Extra line!",
-      "Extra line!"
+      "In a wok (or large pan) over high heat, add oil, chilies, red onions, and garlic and fry for 1-2 minutes",
+      "Add ground chicken or turkey and stir fry for 2 more minutes, breaking meat up into small bits",
+      "Add fish sauce, soy sauce, and sugar or honey, stir fry for another minute",
+      "Add chicken broth and stir to deglaze pan. Broth should cook off fairly quicky over high heat.",
+      "After broth cooks off, add Thai Basil leaves and cook until wilted",
+      "Remove from heat and serve over steamed white rice or in lettuce wraps"
     ]
   },
   "e95cee2a-33f5-40af-bb50-a98cccb57926": {
-
+    "name": "Chocolate Chip Cookies",
+    "imageUrl": "https://cinc-prod.s3.amazonaws.com/user-images/thumbs/1200_384/upqfM39KF8.jpg",
+    "prepTime": "16 min",
+    "cookTime": "10 min",
+    "servings": null,
+    "ingredients": [
+      "1 cup butter",
+      "1 cup White Sugar",
+      "1 cup Brown Sugar",
+      "2 Eggs",
+      "2 teaspoons Vanilla",
+      "3 cups All-Purpose Flour",
+      "1 teaspoon Baking Soda",
+      "2 teaspoons Hot Water",
+      "1/2 teaspoon Salt",
+      "2 cups Chocolate Chips (I use a mixture of dark chocolate and milk chocolate)",
+      "1 cup Nuts (I use a mixture of walnuts and pecans)",
+      "1/2 teaspoon Cream of tartar (for cookie texture)"
+    ],
+    "instructions": [
+      "Preheat oven to 350 degrees.",
+      "Mix together butter and sugar until smooth.",
+      "Beat eggs into mixture (one at a time).",
+      "Add vanilla.",
+      "Dissolve the baking soda into the hot water then add to the mixture.",
+      "Add cream of tartar (if desired) for texture ... not necessary for flavor.",
+      "Add and flour into mixture.",
+      "Add chips and nuts.",
+      "Drop by large spoonfuls onto ungreased pans.",
+      "Bake for 10 minutes."
+    ]
   }
 }

@@ -8,9 +8,9 @@
 
 <ion-content>
 
-    <ion-slides spacing>
-      <ion-slide *ngFor="let recipe of recipes">
-          <ion-card>
+  <ion-slides spacing>
+    <ion-slide *ngFor="let recipe of recipes">
+      <ion-card>
         <img src="{{ recipe.imageUrl }}">
         <ion-card-header>{{ recipe.name }}</ion-card-header>
 
@@ -21,25 +21,27 @@
             <ion-col>Servings</ion-col>
           </ion-row>
           <ion-row>
-            <ion-col>{{ recipe.prepTime }}</ion-col>
-            <ion-col>{{ recipe.cookTime }}</ion-col>
-            <ion-col>{{ recipe.servings }}</ion-col>
+            <ion-col>{{ recipe.prepTime || "-" }}</ion-col>
+            <ion-col>{{ recipe.cookTime || "-" }}</ion-col>
+            <ion-col>{{ recipe.servings || "-" }}</ion-col>
           </ion-row>
         </ion-grid>
 
         <ion-list inset>
-          <ion-item *ngFor="let ingredient of recipe.ingredients">
+          <ion-list-header>Ingredients</ion-list-header>
+          <ion-item text-wrap *ngFor="let ingredient of recipe.ingredients">
             {{ ingredient }}
           </ion-item>
         </ion-list>
 
         <ion-list>
-          <ion-item *ngFor="let instruction of recipe.instructions; let i = index;">
-            {{ i + 1 }}. {{ instruction }}
+          <ion-list-header>Instructions</ion-list-header>
+          <ion-item text-wrap *ngFor="let instruction of recipe.instructions">
+            {{ instruction }}
           </ion-item>
         </ion-list>
       </ion-card>
-      </ion-slide>
-    </ion-slides>
+    </ion-slide>
+  </ion-slides>
 
 </ion-content>
