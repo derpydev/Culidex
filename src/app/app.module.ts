@@ -6,14 +6,18 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { IonicStorageModule } from '@ionic/storage'
 import { HttpModule } from '@angular/http'
 
-import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { MyApp } from './app.component'
+import { HomePage } from '../pages/home/home'
+import { EditPage } from '../pages/edit/edit'
+import { ActionsPage } from '../pages/actions/actions'
 import { RecipeService } from './recipe.service'
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    EditPage,
+    ActionsPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,9 @@ import { RecipeService } from './recipe.service'
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    EditPage,
+    ActionsPage
   ],
   providers: [
     StatusBar,

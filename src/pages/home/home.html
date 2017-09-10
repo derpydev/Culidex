@@ -3,13 +3,18 @@
     <ion-title>
       Culidex
     </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
 
   <ion-slides spacing>
-    <ion-slide *ngFor="let recipe of recipes">
+    <ion-slide *ngFor="let recipe of recipes" >
       <ion-card>
         <img src="{{ recipe.imageUrl }}">
         <ion-card-header>{{ recipe.name }}</ion-card-header>

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Culidex
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="recipe" (ngSubmit)="saveForm()">
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input type="text" formControlName="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Image location</ion-label>
+      <ion-input type="text" formControlName="imageUrl"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Prep time</ion-label>
+      <ion-input type="text" formControlName="prepTime"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Cook time</ion-label>
+      <ion-input type="text" formControlName="cookTime"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Servings</ion-label>
+      <ion-input type="text" formControlName="servings"></ion-input>
+    </ion-item>
+    <ion-buttons text-center padding>
+      <button ion-button type="submit" [disabled]="!recipe.valid">Submit</button>
+      <button ion-button type="button" (click)="cancel()">Cancel</button>
+    </ion-buttons>
+  </form>
+</ion-content>

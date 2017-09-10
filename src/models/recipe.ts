@@ -1,4 +1,5 @@
 export class Recipe {
+  id: string
   name: string
   imageUrl: string
   prepTime: string
@@ -7,7 +8,7 @@ export class Recipe {
   ingredients: string[]
   instructions: string[]
 
-  constructor(name: string) {
-    this.name = name
+  constructor(id: string) {
+    this.id = id
   }
 }
